@@ -1,0 +1,95 @@
+.treeviewTest {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+
+    padding: 0;
+    overflow: hidden;
+}
+
+.treeviewTest .list-group {
+    margin-bottom: 0;
+}
+
+.treeviewTest .list-group-item {
+    border-radius: 0;
+    border-width: 1px 0 0 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.treeviewTest .list-group-item:hover {
+    background-color:#dee2e6;
+}
+
+.treeviewTest > .list-group-item:first-child {
+    border-top-width: 0;
+    height: 60px;
+}
+
+.treeviewTest .state-icon {
+    margin-right: 8px;
+}
+.treeviewTest .item-icon {
+    margin-right: 5px;
+}
+
+a.selected {
+    background-color:#1F75CC;
+    color:white;
+    z-index:100;
+  }
+  
+  .messagepop {
+    background-color:#FFFFFF;
+    border:1px solid #999999;
+    cursor:default;
+    display:none;
+    margin-top: 15px;
+    position:absolute;
+    text-align:left;
+    width:394px;
+    z-index:50;
+    padding: 25px 25px 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 3px;
+    padding-left: 15px;
+    text-indent: -15px;
+  }
+  
+  .messagepop p, .messagepop.div {
+    border-bottom: 1px solid #EFEFEF;
+    margin: 8px 0;
+    padding-bottom: 8px;
+  }
+
+  .popup {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.75);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 50;
+}
+ 
+.popup #addItemModal, .popup #deleteItemModal {
+  z-index: 100;
+}
+
+.modal-header, .modal-footer {
+  display: flex!important;
+}
